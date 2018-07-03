@@ -34,7 +34,7 @@ class CategoryViewController: UITableViewController {
         return categoryArray.count
     }
     
-    //MARK: - Add New Items
+    //MARK: - Add New Categories
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         
@@ -50,11 +50,11 @@ class CategoryViewController: UITableViewController {
         let alertAction = UIAlertAction(title: "Add category", style: .default) { (action) in
             if textField.text!.trimmingCharacters(in: NSCharacterSet.whitespaces) != "" {
                 
-                let newItem = Category(context: self.context)
+                let newCategory = Category(context: self.context)
                 
-                newItem.name = textField.text!
+                newCategory.name = textField.text!
                 
-                self.categoryArray.append(newItem)
+                self.categoryArray.append(newCategory)
                 
                 self.saveCategories()
                 
