@@ -33,7 +33,7 @@ class CategoryViewController: UITableViewController {
         return categoryArray.count
     }
     
-    //MARK: - Add New Items
+    //MARK: - Add New Categories
     
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         
